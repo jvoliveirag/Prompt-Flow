@@ -1,0 +1,7 @@
+.cache.sqlite
+
+.venv/
+__pycache__/
+.vscode/
+
+*.log

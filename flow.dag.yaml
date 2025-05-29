@@ -1,0 +1,41 @@
+inputs:
+  city_name:
+    type: string
+    default: campinas
+  country_name:
+    type: string
+    default: brazil
+outputs:
+  output:
+    type: string
+    reference: ${extract_llm_response_content.output}
+nodes:
+- name: get_weather
+  type: python
+  source:
+    type: code
+    path: get_weather.py
+  inputs:
+    city_name: ${inputs.city_name}
+    country_name: ${inputs.country_name}
+- name: extract_llm_response_content
+  type: python
+  source:
+    type: code
+    path: extract_llm_response_content.py
+  inputs:
+    llm_response: ${get_activities_suggestion.output}
+- name: get_activities_suggestion
+  type: custom_llm
+  source:
+    type: package_with_prompt
+    tool: promptflow.tools.llm.llm
+    path: GPT_Chat_Prompt.jinja2
+  inputs:
+    connection: open_ai_connection
+    api: completion
+    model: gpt-3.5-turbo-instruct
+    weather_conditions: ${get_weather.output}
+    city: ${inputs.city_name}
+    country: ${inputs.country_name}
+    max_tokens: 1000

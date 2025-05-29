@@ -1,0 +1,161 @@
+{
+  "flow_runs": [
+    {
+      "run_id": "f1492f3d-4d7d-4e04-a6b6-f88049cc5606_0",
+      "status": "Completed",
+      "error": null,
+      "inputs": {
+        "city_name": "campinas",
+        "country_name": "brazil"
+      },
+      "output": {
+        "output": "Some suggestions for activities to do in Campinas, Brazil, based on the provided dataset could be:\n\n1. On the first day, with a mild temperature and low chance of precipitation, it could be a good day for outdoor activities such as hiking or a picnic in a park.\n\n2. On the second day, with cooler temperatures and no chance of rain, it could be a great opportunity to explore the city and visit museums or historical sites.\n\n3. The third day also has a low chance of rain and comfortable temperatures for outdoor activities. It could be a good time to visit a nearby beach or go for a swim in a pool.\n\n4. With slightly higher temperatures on the fourth day, it could be a great day to visit a local market or shopping center and try some traditional Brazilian cuisine or do some shopping.\n\n5. The fifth day has a higher chance of precipitation and slightly cooler temperatures. This could be a perfect day to relax and unwind indoors with a good book or movie.\n\n6. The sixth day brings more rain and cooler temperatures. It could be a good day to visit a café or art gallery and enjoy some indoor activities.\n\n7. Finally, on the seventh day, with the highest chance of rain, it could be a good day to visit a spa or wellness center and enjoy some self-care activities.\n\nThese are just a few suggestions, but there are many activities to do in Campinas, Brazil, depending on your interests and preferences. It's always a good idea to have a backup plan in case the weather forecast changes. Enjoy your time in Campinas!"
+      },
+      "metrics": null,
+      "request": null,
+      "parent_run_id": "f1492f3d-4d7d-4e04-a6b6-f88049cc5606",
+      "root_run_id": "f1492f3d-4d7d-4e04-a6b6-f88049cc5606",
+      "source_run_id": null,
+      "flow_id": "default_flow_id",
+      "start_time": "2025-05-29T03:01:27.973761Z",
+      "end_time": "2025-05-29T03:01:33.280838Z",
+      "index": 0,
+      "api_calls": [
+        {
+          "name": "flow",
+          "node_name": "flow",
+          "type": "Flow",
+          "start_time": 1748498487.973761,
+          "end_time": 1748498493.280838,
+          "children": [],
+          "system_metrics": {
+            "duration": 5.307077,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "total_tokens": 0
+          },
+          "inputs": {
+            "city_name": "campinas",
+            "country_name": "brazil"
+          },
+          "output": {
+            "output": "Some suggestions for activities to do in Campinas, Brazil, based on the provided dataset could be:\n\n1. On the first day, with a mild temperature and low chance of precipitation, it could be a good day for outdoor activities such as hiking or a picnic in a park.\n\n2. On the second day, with cooler temperatures and no chance of rain, it could be a great opportunity to explore the city and visit museums or historical sites.\n\n3. The third day also has a low chance of rain and comfortable temperatures for outdoor activities. It could be a good time to visit a nearby beach or go for a swim in a pool.\n\n4. With slightly higher temperatures on the fourth day, it could be a great day to visit a local market or shopping center and try some traditional Brazilian cuisine or do some shopping.\n\n5. The fifth day has a higher chance of precipitation and slightly cooler temperatures. This could be a perfect day to relax and unwind indoors with a good book or movie.\n\n6. The sixth day brings more rain and cooler temperatures. It could be a good day to visit a café or art gallery and enjoy some indoor activities.\n\n7. Finally, on the seventh day, with the highest chance of rain, it could be a good day to visit a spa or wellness center and enjoy some self-care activities.\n\nThese are just a few suggestions, but there are many activities to do in Campinas, Brazil, depending on your interests and preferences. It's always a good idea to have a backup plan in case the weather forecast changes. Enjoy your time in Campinas!"
+          },
+          "error": null
+        }
+      ],
+      "name": "",
+      "description": "",
+      "tags": null,
+      "system_metrics": {
+        "duration": 5.307077,
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "result": {
+        "output": "Some suggestions for activities to do in Campinas, Brazil, based on the provided dataset could be:\n\n1. On the first day, with a mild temperature and low chance of precipitation, it could be a good day for outdoor activities such as hiking or a picnic in a park.\n\n2. On the second day, with cooler temperatures and no chance of rain, it could be a great opportunity to explore the city and visit museums or historical sites.\n\n3. The third day also has a low chance of rain and comfortable temperatures for outdoor activities. It could be a good time to visit a nearby beach or go for a swim in a pool.\n\n4. With slightly higher temperatures on the fourth day, it could be a great day to visit a local market or shopping center and try some traditional Brazilian cuisine or do some shopping.\n\n5. The fifth day has a higher chance of precipitation and slightly cooler temperatures. This could be a perfect day to relax and unwind indoors with a good book or movie.\n\n6. The sixth day brings more rain and cooler temperatures. It could be a good day to visit a café or art gallery and enjoy some indoor activities.\n\n7. Finally, on the seventh day, with the highest chance of rain, it could be a good day to visit a spa or wellness center and enjoy some self-care activities.\n\nThese are just a few suggestions, but there are many activities to do in Campinas, Brazil, depending on your interests and preferences. It's always a good idea to have a backup plan in case the weather forecast changes. Enjoy your time in Campinas!"
+      },
+      "upload_metrics": false,
+      "otel_trace_id": null,
+      "message_format": "basic"
+    }
+  ],
+  "node_runs": [
+    {
+      "node": "get_weather",
+      "flow_run_id": "f1492f3d-4d7d-4e04-a6b6-f88049cc5606",
+      "run_id": "f1492f3d-4d7d-4e04-a6b6-f88049cc5606_get_weather_0",
+      "status": "Completed",
+      "inputs": {
+        "city_name": "campinas",
+        "country_name": "brazil"
+      },
+      "output": "                       date  weather_code     sunrise  ...  temperature_2m_min  precipitation_probability_max  precipitation_hours\n0 2025-05-29 00:00:00+00:00          61.0  1748511610  ...           13.144000                           28.0                  4.0\n1 2025-05-30 00:00:00+00:00           3.0  1748598036  ...            7.194000                            0.0                  0.0\n2 2025-05-31 00:00:00+00:00           3.0  1748684461  ...           10.694000                            3.0                  0.0\n3 2025-06-01 00:00:00+00:00           2.0  1748770886  ...           12.444000                           10.0                  0.0\n4 2025-06-02 00:00:00+00:00           3.0  1748857312  ...           15.144000                           21.0                  0.0\n5 2025-06-03 00:00:00+00:00          95.0  1748943736  ...           16.544001                           56.0                 12.0\n6 2025-06-04 00:00:00+00:00          96.0  1749030161  ...           16.794001                           55.0                 20.0\n\n[7 rows x 10 columns]",
+      "metrics": null,
+      "error": null,
+      "parent_run_id": "f1492f3d-4d7d-4e04-a6b6-f88049cc5606_0",
+      "start_time": "2025-05-29T03:01:27.979454Z",
+      "end_time": "2025-05-29T03:01:29.254239Z",
+      "index": 0,
+      "api_calls": [],
+      "cached_run_id": null,
+      "cached_flow_run_id": null,
+      "logs": {
+        "stdout": "[2025-05-29T03:01:29+0000] Coordinates -22.875°N -47.0°E\n[2025-05-29T03:01:29+0000] Elevation 679.0 m asl\n",
+        "stderr": ""
+      },
+      "system_metrics": {
+        "duration": 1.274785
+      },
+      "result": "                       date  weather_code     sunrise  ...  temperature_2m_min  precipitation_probability_max  precipitation_hours\n0 2025-05-29 00:00:00+00:00          61.0  1748511610  ...           13.144000                           28.0                  4.0\n1 2025-05-30 00:00:00+00:00           3.0  1748598036  ...            7.194000                            0.0                  0.0\n2 2025-05-31 00:00:00+00:00           3.0  1748684461  ...           10.694000                            3.0                  0.0\n3 2025-06-01 00:00:00+00:00           2.0  1748770886  ...           12.444000                           10.0                  0.0\n4 2025-06-02 00:00:00+00:00           3.0  1748857312  ...           15.144000                           21.0                  0.0\n5 2025-06-03 00:00:00+00:00          95.0  1748943736  ...           16.544001                           56.0                 12.0\n6 2025-06-04 00:00:00+00:00          96.0  1749030161  ...           16.794001                           55.0                 20.0\n\n[7 rows x 10 columns]",
+      "message_format": "basic"
+    },
+    {
+      "node": "get_activities_suggestion",
+      "flow_run_id": "f1492f3d-4d7d-4e04-a6b6-f88049cc5606",
+      "run_id": "f1492f3d-4d7d-4e04-a6b6-f88049cc5606_get_activities_suggestion_0",
+      "status": "Completed",
+      "inputs": {
+        "connection": "open_ai_connection",
+        "api": "completion",
+        "model": "gpt-3.5-turbo-instruct",
+        "weather_conditions": "                       date  weather_code     sunrise  ...  temperature_2m_min  precipitation_probability_max  precipitation_hours\n0 2025-05-29 00:00:00+00:00          61.0  1748511610  ...           13.144000                           28.0                  4.0\n1 2025-05-30 00:00:00+00:00           3.0  1748598036  ...            7.194000                            0.0                  0.0\n2 2025-05-31 00:00:00+00:00           3.0  1748684461  ...           10.694000                            3.0                  0.0\n3 2025-06-01 00:00:00+00:00           2.0  1748770886  ...           12.444000                           10.0                  0.0\n4 2025-06-02 00:00:00+00:00           3.0  1748857312  ...           15.144000                           21.0                  0.0\n5 2025-06-03 00:00:00+00:00          95.0  1748943736  ...           16.544001                           56.0                 12.0\n6 2025-06-04 00:00:00+00:00          96.0  1749030161  ...           16.794001                           55.0                 20.0\n\n[7 rows x 10 columns]",
+        "city": "campinas",
+        "country": "brazil",
+        "max_tokens": 1000,
+        "_inputs_to_escape": [
+          "city",
+          "country"
+        ]
+      },
+      "output": "Some suggestions for activities to do in Campinas, Brazil, based on the provided dataset could be:\n\n1. On the first day, with a mild temperature and low chance of precipitation, it could be a good day for outdoor activities such as hiking or a picnic in a park.\n\n2. On the second day, with cooler temperatures and no chance of rain, it could be a great opportunity to explore the city and visit museums or historical sites.\n\n3. The third day also has a low chance of rain and comfortable temperatures for outdoor activities. It could be a good time to visit a nearby beach or go for a swim in a pool.\n\n4. With slightly higher temperatures on the fourth day, it could be a great day to visit a local market or shopping center and try some traditional Brazilian cuisine or do some shopping.\n\n5. The fifth day has a higher chance of precipitation and slightly cooler temperatures. This could be a perfect day to relax and unwind indoors with a good book or movie.\n\n6. The sixth day brings more rain and cooler temperatures. It could be a good day to visit a café or art gallery and enjoy some indoor activities.\n\n7. Finally, on the seventh day, with the highest chance of rain, it could be a good day to visit a spa or wellness center and enjoy some self-care activities.\n\nThese are just a few suggestions, but there are many activities to do in Campinas, Brazil, depending on your interests and preferences. It's always a good idea to have a backup plan in case the weather forecast changes. Enjoy your time in Campinas!",
+      "metrics": null,
+      "error": null,
+      "parent_run_id": "f1492f3d-4d7d-4e04-a6b6-f88049cc5606_0",
+      "start_time": "2025-05-29T03:01:29.256518Z",
+      "end_time": "2025-05-29T03:01:33.276572Z",
+      "index": 0,
+      "api_calls": [],
+      "cached_run_id": null,
+      "cached_flow_run_id": null,
+      "logs": {
+        "stdout": "",
+        "stderr": ""
+      },
+      "system_metrics": {
+        "duration": 4.020054
+      },
+      "result": "Some suggestions for activities to do in Campinas, Brazil, based on the provided dataset could be:\n\n1. On the first day, with a mild temperature and low chance of precipitation, it could be a good day for outdoor activities such as hiking or a picnic in a park.\n\n2. On the second day, with cooler temperatures and no chance of rain, it could be a great opportunity to explore the city and visit museums or historical sites.\n\n3. The third day also has a low chance of rain and comfortable temperatures for outdoor activities. It could be a good time to visit a nearby beach or go for a swim in a pool.\n\n4. With slightly higher temperatures on the fourth day, it could be a great day to visit a local market or shopping center and try some traditional Brazilian cuisine or do some shopping.\n\n5. The fifth day has a higher chance of precipitation and slightly cooler temperatures. This could be a perfect day to relax and unwind indoors with a good book or movie.\n\n6. The sixth day brings more rain and cooler temperatures. It could be a good day to visit a café or art gallery and enjoy some indoor activities.\n\n7. Finally, on the seventh day, with the highest chance of rain, it could be a good day to visit a spa or wellness center and enjoy some self-care activities.\n\nThese are just a few suggestions, but there are many activities to do in Campinas, Brazil, depending on your interests and preferences. It's always a good idea to have a backup plan in case the weather forecast changes. Enjoy your time in Campinas!",
+      "message_format": "basic"
+    },
+    {
+      "node": "extract_llm_response_content",
+      "flow_run_id": "f1492f3d-4d7d-4e04-a6b6-f88049cc5606",
+      "run_id": "f1492f3d-4d7d-4e04-a6b6-f88049cc5606_extract_llm_response_content_0",
+      "status": "Completed",
+      "inputs": {
+        "llm_response": "Some suggestions for activities to do in Campinas, Brazil, based on the provided dataset could be:\n\n1. On the first day, with a mild temperature and low chance of precipitation, it could be a good day for outdoor activities such as hiking or a picnic in a park.\n\n2. On the second day, with cooler temperatures and no chance of rain, it could be a great opportunity to explore the city and visit museums or historical sites.\n\n3. The third day also has a low chance of rain and comfortable temperatures for outdoor activities. It could be a good time to visit a nearby beach or go for a swim in a pool.\n\n4. With slightly higher temperatures on the fourth day, it could be a great day to visit a local market or shopping center and try some traditional Brazilian cuisine or do some shopping.\n\n5. The fifth day has a higher chance of precipitation and slightly cooler temperatures. This could be a perfect day to relax and unwind indoors with a good book or movie.\n\n6. The sixth day brings more rain and cooler temperatures. It could be a good day to visit a café or art gallery and enjoy some indoor activities.\n\n7. Finally, on the seventh day, with the highest chance of rain, it could be a good day to visit a spa or wellness center and enjoy some self-care activities.\n\nThese are just a few suggestions, but there are many activities to do in Campinas, Brazil, depending on your interests and preferences. It's always a good idea to have a backup plan in case the weather forecast changes. Enjoy your time in Campinas!"
+      },
+      "output": "Some suggestions for activities to do in Campinas, Brazil, based on the provided dataset could be:\n\n1. On the first day, with a mild temperature and low chance of precipitation, it could be a good day for outdoor activities such as hiking or a picnic in a park.\n\n2. On the second day, with cooler temperatures and no chance of rain, it could be a great opportunity to explore the city and visit museums or historical sites.\n\n3. The third day also has a low chance of rain and comfortable temperatures for outdoor activities. It could be a good time to visit a nearby beach or go for a swim in a pool.\n\n4. With slightly higher temperatures on the fourth day, it could be a great day to visit a local market or shopping center and try some traditional Brazilian cuisine or do some shopping.\n\n5. The fifth day has a higher chance of precipitation and slightly cooler temperatures. This could be a perfect day to relax and unwind indoors with a good book or movie.\n\n6. The sixth day brings more rain and cooler temperatures. It could be a good day to visit a café or art gallery and enjoy some indoor activities.\n\n7. Finally, on the seventh day, with the highest chance of rain, it could be a good day to visit a spa or wellness center and enjoy some self-care activities.\n\nThese are just a few suggestions, but there are many activities to do in Campinas, Brazil, depending on your interests and preferences. It's always a good idea to have a backup plan in case the weather forecast changes. Enjoy your time in Campinas!",
+      "metrics": null,
+      "error": null,
+      "parent_run_id": "f1492f3d-4d7d-4e04-a6b6-f88049cc5606_0",
+      "start_time": "2025-05-29T03:01:33.278315Z",
+      "end_time": "2025-05-29T03:01:33.280350Z",
+      "index": 0,
+      "api_calls": [],
+      "cached_run_id": null,
+      "cached_flow_run_id": null,
+      "logs": {
+        "stdout": "[2025-05-29T03:01:33+0000] Some suggestions for activities to do in Campinas, Brazil, based on the provided dataset could be:\n\n1. On the first day, with a mild temperature and low chance of precipitation, it could be a good day for outdoor activities such as hiking or a picnic in a park.\n\n2. On the second day, with cooler temperatures and no chance of rain, it could be a great opportunity to explore the city and visit museums or historical sites.\n\n3. The third day also has a low chance of rain and comfortable temperatures for outdoor activities. It could be a good time to visit a nearby beach or go for a swim in a pool.\n\n4. With slightly higher temperatures on the fourth day, it could be a great day to visit a local market or shopping center and try some traditional Brazilian cuisine or do some shopping.\n\n5. The fifth day has a higher chance of precipitation and slightly cooler temperatures. This could be a perfect day to relax and unwind indoors with a good book or movie.\n\n6. The sixth day brings more rain and cooler temperatures. It could be a good day to visit a café or art gallery and enjoy some indoor activities.\n\n7. Finally, on the seventh day, with the highest chance of rain, it could be a good day to visit a spa or wellness center and enjoy some self-care activities.\n\nThese are just a few suggestions, but there are many activities to do in Campinas, Brazil, depending on your interests and preferences. It's always a good idea to have a backup plan in case the weather forecast changes. Enjoy your time in Campinas!\n",
+        "stderr": ""
+      },
+      "system_metrics": {
+        "duration": 0.002035
+      },
+      "result": "Some suggestions for activities to do in Campinas, Brazil, based on the provided dataset could be:\n\n1. On the first day, with a mild temperature and low chance of precipitation, it could be a good day for outdoor activities such as hiking or a picnic in a park.\n\n2. On the second day, with cooler temperatures and no chance of rain, it could be a great opportunity to explore the city and visit museums or historical sites.\n\n3. The third day also has a low chance of rain and comfortable temperatures for outdoor activities. It could be a good time to visit a nearby beach or go for a swim in a pool.\n\n4. With slightly higher temperatures on the fourth day, it could be a great day to visit a local market or shopping center and try some traditional Brazilian cuisine or do some shopping.\n\n5. The fifth day has a higher chance of precipitation and slightly cooler temperatures. This could be a perfect day to relax and unwind indoors with a good book or movie.\n\n6. The sixth day brings more rain and cooler temperatures. It could be a good day to visit a café or art gallery and enjoy some indoor activities.\n\n7. Finally, on the seventh day, with the highest chance of rain, it could be a good day to visit a spa or wellness center and enjoy some self-care activities.\n\nThese are just a few suggestions, but there are many activities to do in Campinas, Brazil, depending on your interests and preferences. It's always a good idea to have a backup plan in case the weather forecast changes. Enjoy your time in Campinas!",
+      "message_format": "basic"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+promptflow
+openmeteo_requests
+geopy
+pandas
+requests_cache
+retry_requests
+promptflow.core
+promptflow-tools

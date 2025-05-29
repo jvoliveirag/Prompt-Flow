@@ -1,0 +1,128 @@
+{
+  "nodes": {
+    "Token_Login_kevd": {
+      "variant_0": {
+        "inputs": {
+          "flow_refresh": [],
+          "flow_token": []
+        }
+      }
+    },
+    "get_weather": {
+      "variant_0": {
+        "inputs": {
+          "city": [],
+          "country": [],
+          "city_name": [],
+          "country_name": []
+        }
+      }
+    },
+    "GPT_Chat_Completion_mxki": {
+      "variant_0": {
+        "inputs": {
+          "text": []
+        }
+      }
+    },
+    "GPT_Chat_Completion_mcs5": {
+      "variant_0": {
+        "inputs": {
+          "text": []
+        }
+      }
+    },
+    "GPT_Chat_Completion_8wrh": {
+      "variant_0": {
+        "inputs": {
+          "text": []
+        }
+      }
+    },
+    "extract_response_content": {
+      "variant_0": {
+        "inputs": {
+          "llm_response": []
+        }
+      }
+    },
+    "Gemini_Chat_Completion_actj": {
+      "variant_0": {
+        "inputs": {
+          "model": [],
+          "user": []
+        }
+      }
+    },
+    "python_node_jlei": {
+      "variant_0": {
+        "inputs": {
+          "llm_response": []
+        }
+      }
+    },
+    "GPT_Chat_Completion_7hn7": {
+      "variant_0": {
+        "inputs": {
+          "text": []
+        }
+      }
+    },
+    "GPT_Chat_Completion_i395": {
+      "variant_0": {
+        "inputs": {
+          "text": []
+        }
+      }
+    },
+    "GPT_Chat_Completion_wvmj": {
+      "variant_0": {
+        "inputs": {
+          "text": []
+        }
+      }
+    },
+    "get_activities_suggestion": {
+      "variant_0": {
+        "inputs": {
+          "weather_conditions": [],
+          "city": [],
+          "country": []
+        }
+      }
+    },
+    "extract_llm_response_content": {
+      "variant_0": {
+        "inputs": {
+          "llm_response": []
+        }
+      }
+    },
+    "Jinja_Jinja_Prompt_Render_yd83": {
+      "variant_0": {
+        "inputs": {
+          "text": []
+        }
+      }
+    },
+    "llm_node_sv4w": {
+      "variant_0": {
+        "inputs": {
+          "model": [],
+          "city": [],
+          "country": []
+        }
+      }
+    },
+    "get_activities_plan": {
+      "variant_0": {
+        "inputs": {
+          "model": [],
+          "weather_conditions": [],
+          "city": [],
+          "country": []
+        }
+      }
+    }
+  }
+}
